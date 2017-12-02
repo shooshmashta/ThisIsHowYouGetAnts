@@ -14,7 +14,8 @@ class THISISHOWYOUGETANTS_API ASpawnPoints : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ASpawnPoints();
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SpawnPoint)
+	bool used = false;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

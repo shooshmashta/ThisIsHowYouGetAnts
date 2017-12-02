@@ -15,17 +15,17 @@ class THISISHOWYOUGETANTS_API ALevelBlocksLBP : public ALevelScriptActor
 	GENERATED_BODY()
 	
 
-		/** A Custom name for each Level, specified in Level BP Default Properties! */
-		UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = LevelBlock)
-		FName LevelBlockName;
+		///** A Custom name for each Level, specified in Level BP Default Properties! */
+		//UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = LevelBlock)
+		//FName LevelBlockName;
 
 public:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = SolusLevel)
+	/*UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = SolusLevel)
 		TArray<FString> levelNames;
-
+*/
 	//OVERRIDES
 protected:
 
-	virtual void PreInitializeComponents() override;
+	//virtual void PreInitializeComponents() override;
 	
 };
